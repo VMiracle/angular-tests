@@ -1,0 +1,11 @@
+{
+  "config": {
+    "vendor-dir": "backend/vendor/"
+  },
+  "require": {
+    "catfan/Medoo": ">=1.1.2-stable",
+    "aura/session": "^2.1",
+    "monolog/monolog": "^1.22",
+    "slim/slim": "^3.0"
+  }
+}

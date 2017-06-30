@@ -1,0 +1,25 @@
+{
+  "name": "template-project",
+  "version": "0.0.0-1",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "less": "^2.7.2",
+    "less-plugin-clean-css": "^1.5.1",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "dev-build": "babel frontend/behaviors/es6/ -d frontend/behaviors/ && lessc frontend/styles/less/main.less frontend/styles/app-style.css && pug frontend/layouts/pug -o frontend/layouts/",
+    "build": "babel frontend/behaviors/es6/ -d frontend/behaviors/ && lessc --clean-css='--s1 --advanced --compatibility=ie8' frontend/styles/less/main.less frontend/styles/app-style.css && pug frontend/layouts/pug -o frontend/layouts/"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
